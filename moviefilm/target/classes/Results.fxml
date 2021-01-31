@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="com.bottas.moviefilm.ControllerResults">
+	<children>
+		<VBox fx:id="VBoxMain" alignment="TOP_CENTER" prefHeight="500.0" prefWidth="341.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+			<children>
+				<Label fx:id="TitleLbl" alignment="TOP_LEFT" text="A sua pesquisa:">
+					<font>
+						<Font name="System Bold" size="18.0" />
+					</font>
+				</Label>
+				<ListView fx:id="listBoxMain" prefHeight="400.0" prefWidth="200.0" />
+				<HBox id="HBox" fx:id="HBox4Btns" alignment="CENTER" spacing="5.0">
+					<children>
+						<Button fx:id="BtnShare" mnemonicParsing="false" onAction="#share" text="Partilhar" />
+						<Button fx:id="BtnExport" mnemonicParsing="false" onAction="#exportPresentation" text="Exportar *.pptx" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="com.bottas.moviefilm.ControllerMain">
+	<children>
+		<VBox fx:id="VBoxMain" alignment="CENTER" prefHeight="423.0" prefWidth="341.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+			<children>		
+				<!--  <Label id="TextLbl" fx:id="LblAddText" text="Pesquisar" /> -->
+				<HBox id="HBox" fx:id="HBox" alignment="CENTER" spacing="5.0">
+					<children>
+						<TextField fx:id="txtAddItem" prefWidth="200.0" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>
+
